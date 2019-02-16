@@ -11,8 +11,12 @@ class MyComponent extends React.Component {
     console.log('This component just mounted to the DOM!')
   }
 
-  componentDidUpdate() {
-    console.log('This component just updated')
+  componentDidUpdate(nextProps, nextState) {
+    console.log(
+      'This component just updated',
+      nextProps,
+      nextState,
+    )
   }
 
   componentWillUnmount() {
@@ -21,7 +25,12 @@ class MyComponent extends React.Component {
 
   handleClick() {
     console.log('You clicked me!')
+
+    this.setState({
+      value: this.state.value + 1,
+    })
   }
+
   render() {
     return <div>
       <button onClick={this.handleClick}>click</button>
