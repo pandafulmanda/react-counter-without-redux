@@ -1,6 +1,11 @@
 class MyComponent extends React.Component {
+  handleClick() {
+    console.log('You clicked me!')
+  }
   render() {
-    return <div>Hello {this.props.name}</div>
+    return <div>
+      <button onClick={this.handleClick}>click</button>
+    </div>
   }
 }
 
