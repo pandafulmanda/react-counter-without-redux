@@ -1,4 +1,12 @@
 class MyComponent extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      value: 0,
+    }
+  }
+
   componentDidMount(){
     console.log('This component just mounted to the DOM!')
   }
