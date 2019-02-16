@@ -23,7 +23,7 @@ class MyComponent extends React.Component {
     console.log('This component is about to unmount!')
   }
 
-  handleClick() {
+  handleClick = () => {
     console.log('You clicked me!')
 
     this.setState({
