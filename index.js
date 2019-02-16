@@ -33,6 +33,7 @@ class MyComponent extends React.Component {
 
   render() {
     return <div>
+      <span>{this.state.value}</span>
       <button onClick={this.handleClick}>click</button>
     </div>
   }
