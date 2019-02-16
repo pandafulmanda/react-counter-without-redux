@@ -1,5 +1,7 @@
-let MyComponent = (props) => {
-  return <div>Hello {props.name}</div>
+class MyComponent extends React.Component {
+  render() {
+    return <div>Hello {this.props.name}</div>
+  }
 }
 
-ReactDOM.render(<MyComponent/>, document.getElementById('root'))
+ReactDOM.render(<MyComponent name="Bananas"/>, document.getElementById('root'))
