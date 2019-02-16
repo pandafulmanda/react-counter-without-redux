@@ -1,4 +1,16 @@
 class MyComponent extends React.Component {
+  componentDidMount(){
+    console.log('This component just mounted to the DOM!')
+  }
+
+  componentDidUpdate() {
+    console.log('This component just updated')
+  }
+
+  componentWillUnmount() {
+    console.log('This component is about to unmount!')
+  }
+
   handleClick() {
     console.log('You clicked me!')
   }
