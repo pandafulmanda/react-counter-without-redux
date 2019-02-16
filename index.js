@@ -1,1 +1,5 @@
-ReactDOM.render(<div>implement a counter and render it here!</div>, document.getElementById('root'))
+let MyComponent = (props) => {
+  return <div>Hello {props.name}</div>
+}
+
+ReactDOM.render(<MyComponent/>, document.getElementById('root'))
